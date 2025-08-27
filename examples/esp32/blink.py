@@ -1,8 +1,8 @@
 from machine import Pin
 from time import sleep
 
-relayA = Pin(17, Pin.OUT)
-relayB = Pin(16, Pin.OUT)
+relayA = Pin(25, Pin.OUT)
+relayB = Pin(33, Pin.OUT)
 
 while True:
     relayA.on()
@@ -11,4 +11,3 @@ while True:
     relayA.off()
     relayB.on()
     sleep(0.5)
-    

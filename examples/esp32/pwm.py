@@ -1,6 +1,6 @@
 from machine import Pin, PWM
 
-relayA = PWM(Pin(17))
+relayA = PWM(Pin(14))
 relayA.freq(200)
 
 while True:
@@ -12,3 +12,4 @@ while True:
         duty = int(brightness * 655.35)
         relayA.duty_u16(duty)
     
+
